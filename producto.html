@@ -149,7 +149,8 @@ section img:hover{
     <img src="https://cdn2.excelsior.com.mx/830x623/filters:format(jpg):quality(75)/media/pictures/2024/03/24/3092643.jpg" alt="">
     <img src="https://www.elespectador.com/resizer/gpjkkfaqmICsDGynJTrZ1lA2j2c=/910x606/filters:quality(70):format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/X73K4GXI3BBKDCPXEWVRUXXLP4.jpg" alt="">
     <img src="https://phantom-marca.unidadeditorial.es/baf0bc7dce077f802a6b022d583cdd79/resize/828/f/jpg/assets/multimedia/imagenes/2023/06/19/16871888528024.jpg" alt="">
-    <img src="https://cdn-7.motorsport.com/images/amp/6xEm9or0/s6/charles-leclerc-scuderia-ferra.jpg" alt="">
+    <img  id="audio_leclerc" src="https://cdn-7.motorsport.com/images/amp/6xEm9or0/s6/charles-leclerc-scuderia-ferra.jpg" alt="">
+    <audio id="leclerc_A" src="leclerc.mp3"></audio>
     <img src="https://gpticketstore.vshcdn.net/uploads/images/1496/f1-oscar-piastri-mclaren-f1austria-f1spa-f1hungaroring-f1france-f1barcelona-f1italy-f1imola-f1silverstone-f1zandvoort.jpg" alt="">
     <img src="https://images.hola.com/imagenes/actualidad/20210523190091/lando-norris-entrevista/0-955-551/landonorris-gtres-t.jpg" alt="">
     <img src="https://sportsbase.io/images/gpfans/copy_1200x800/d06ba75a80b97a3a33bb48054ea12f64db67b54a.jpg" alt="">
@@ -379,6 +380,10 @@ section img:hover{
         behavior: 'smooth'
       });
     });
+  });
+      document.getElementById('audio_leclerc').addEventListener('click', function() {
+    var audio = document.getElementById('leclerc_A');
+    audio.play();
   });
 </script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
