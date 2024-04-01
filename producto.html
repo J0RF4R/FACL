@@ -384,10 +384,18 @@ section img:hover{
   });
       document.getElementById('audio_leclerc').addEventListener('click', function() {
     var audio = document.getElementById('leclerc_A');
+          for(var i = 0; i < audioElements.length; i++) {
+    audioElements[i].pause(); // Pausa todos los audios que estén reproduciéndose
+    audioElements[i].currentTime = 0; // Reinicia el tiempo de reproducción a 0 para cada audio
+  }
     audio.play();
   });
       document.getElementById('audio_logan').addEventListener('click', function() {
     var audio = document.getElementById('logan_A');
+          for(var i = 0; i < audioElements.length; i++) {
+    audioElements[i].pause(); // Pausa todos los audios que estén reproduciéndose
+    audioElements[i].currentTime = 0; // Reinicia el tiempo de reproducción a 0 para cada audio
+  }
     audio.play();
   });
 </script>
