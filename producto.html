@@ -153,7 +153,8 @@ section img:hover{
     <audio id="leclerc_A" src="leclerc.mp3"></audio>
     <img src="https://gpticketstore.vshcdn.net/uploads/images/1496/f1-oscar-piastri-mclaren-f1austria-f1spa-f1hungaroring-f1france-f1barcelona-f1italy-f1imola-f1silverstone-f1zandvoort.jpg" alt="">
     <img src="https://images.hola.com/imagenes/actualidad/20210523190091/lando-norris-entrevista/0-955-551/landonorris-gtres-t.jpg" alt="">
-    <img src="https://sportsbase.io/images/gpfans/copy_1200x800/d06ba75a80b97a3a33bb48054ea12f64db67b54a.jpg" alt="">
+    <img id="audio_logan" src="https://sportsbase.io/images/gpfans/copy_1200x800/d06ba75a80b97a3a33bb48054ea12f64db67b54a.jpg" alt="">
+     <audio id="logan_A" src="logan.mp3"></audio>
     <img src="https://phantom-marca-mx.unidadeditorial.es/825bc53568c1f66b0cd5656a75f0b0cf/resize/1200/f/jpg/mx/assets/multimedia/imagenes/2023/03/12/16785802022683.jpg" alt="">
     <img src="https://i2-prod.mirror.co.uk/incoming/article32436459.ece/ALTERNATES/n615/0_F1-Grand-Prix-of-Australia.jpg" alt="">
 
@@ -383,6 +384,10 @@ section img:hover{
   });
       document.getElementById('audio_leclerc').addEventListener('click', function() {
     var audio = document.getElementById('leclerc_A');
+    audio.play();
+  });
+      document.getElementById('audio_logan').addEventListener('click', function() {
+    var audio = document.getElementById('logan_A');
     audio.play();
   });
 </script>
